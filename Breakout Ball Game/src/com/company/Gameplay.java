@@ -20,7 +20,7 @@ public class Gameplay extends JPanel implements ActionListener, KeyListener {
 
     //Timer
     private Timer timer;
-    private int delay = 8;
+    private int delay = 3;
 
     //position of paddle
     private int playerX = 310;
@@ -121,7 +121,7 @@ public class Gameplay extends JPanel implements ActionListener, KeyListener {
             }
         }
 
-        //when right key is pressed
+        //when left key is pressed
         if(e.getKeyCode() == KeyEvent.VK_LEFT) {
             //checking if it doesn't go outside the panel
             if(playerX < 10) {
